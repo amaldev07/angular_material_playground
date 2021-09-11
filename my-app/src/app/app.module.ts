@@ -7,10 +7,12 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { SimpleMatTableComponent } from './simple-mat-table/simple-mat-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SimpleMatTableComponent
   ],
   imports: [
     BrowserModule,
