@@ -1,0 +1,33 @@
+.table-container {
+    max-height: 200px;
+    /* Set this to your desired height */
+    overflow-y: auto;
+
+    table {
+        // width: 100%;
+        // border-collapse: collapse;
+    }
+
+    thead,
+    tbody {
+        // display: block;
+    }
+
+    .zzz {
+        position: sticky !important;
+        top: 0;
+        /* Make the header stick to the top */
+        // background: white;
+        /* Background color of the header */
+        // z-index: 1;
+        /* Ensure header is above other content */
+    }
+
+    // tbody {
+    //     height: 200px;
+    //     /* Set the same height as the container */
+    //     overflow-y: auto;
+    //     /* Scroll for tbody */
+    //     display: block;
+    // }
+}
