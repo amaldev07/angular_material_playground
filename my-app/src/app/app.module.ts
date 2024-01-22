@@ -15,6 +15,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { SimpleMatTableWithApiComponent } from './simple-mat-table-with-api/simple-mat-table-with-api.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ScrollTableComponent } from './scroll-table/scroll-table.component';
+import { RightPanelDisableComponent } from './right-panel-disable/right-panel-disable.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ScrollTableComponent } from './scroll-table/scroll-table.component';
     SimpleMatTableComponent,
     NavbarComponent,
     SimpleMatTableWithApiComponent,
-    ScrollTableComponent
+    ScrollTableComponent,
+    RightPanelDisableComponent
   ],
   imports: [
     BrowserModule,
