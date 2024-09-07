@@ -13,6 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { SimpleMatTableWithApiComponent } from './simple-mat-table-with-api/simple-mat-table-with-api.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SimpleMatTableWithApiComponent } from './simple-mat-table-with-api/simp
     MatToolbarModule,
     MatButtonModule,
     MatMenuModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()

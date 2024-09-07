@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { ApiService } from '../services/api-service.service';
 
 export interface PeriodicElement {
   id: number;
@@ -22,6 +23,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrl: './simple-mat-table-with-api.component.scss'
 })
 export class SimpleMatTableWithApiComponent {
+
+  constructor(private apiService: ApiService) { }
+
   displayedColumns: string[] = ['id', 'name', 'position', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>([]);
 
@@ -31,7 +35,23 @@ export class SimpleMatTableWithApiComponent {
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
-    this.dataSource.data = ELEMENT_DATA;
+    // this.dataSource.data = ELEMENT_DATA;
+    this.getData();
+
+  }
+
+  getData() {
+    this.apiService.getData().subscribe({
+      next: (response) => {
+        debugger;
+        this.dataSource.data = response;
+        console.log('Data received:', this.dataSource.data);
+      },
+      error: (error) => {
+        debugger;
+        console.error('Error fetching data:', error);
+      }
+    });
   }
 
   applyFilter(event: Event) {
@@ -42,4 +62,6 @@ export class SimpleMatTableWithApiComponent {
       this.dataSource.paginator.firstPage();
     }
   }
+
+
 }
