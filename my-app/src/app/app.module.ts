@@ -12,12 +12,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { SimpleMatTableWithApiComponent } from './simple-mat-table-with-api/simple-mat-table-with-api.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SimpleMatTableComponent,
-    NavbarComponent
+    NavbarComponent,
+    SimpleMatTableWithApiComponent
   ],
   imports: [
     BrowserModule,
