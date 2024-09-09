@@ -1,0 +1,15 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  app-navbar {
+    flex: 0 0 auto; /* Makes the navbar take up its required space */
+    margin-bottom: 68px;
+  }
+  
+  .component-below-navbar {
+    flex: 1 1 auto; /* Makes the rest of the content take up the remaining space */
+  }
+   
