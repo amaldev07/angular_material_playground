@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  <span class="navbar-brand">MyApp</span>
+
+  <!-- Push the buttons to the right -->
+  <span class="spacer"></span>
+
+  <!-- Simple Menu Item -->
+  <!-- <button mat-button routerLink="/your-path" routerLinkActive="active">Your Component</button> -->
+
+  <!-- Parent Menu with Submenu -->
+  <button mat-button [matMenuTriggerFor]="mainMenu">Table</button>
+
+  <mat-menu #mainMenu="matMenu">
+    <!-- First level menu item -->
+    <button mat-menu-item routerLink="/simple-mat-table" routerLinkActive="active">Simple Mat Table</button>
+
+    <!-- Submenu with children -->
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">Submenu 2</button>
+
+    <!-- Define the submenu -->
+    <mat-menu #subMenu="matMenu">
+      <button mat-menu-item routerLink="/submenu-path2-1" routerLinkActive="active">Submenu 2-1</button>
+      <button mat-menu-item routerLink="/submenu-path2-2" routerLinkActive="active">Submenu 2-2</button>
+    </mat-menu>
+  </mat-menu>
+</mat-toolbar>

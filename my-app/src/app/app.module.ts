@@ -8,11 +8,16 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { SimpleMatTableComponent } from './simple-mat-table/simple-mat-table.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SimpleMatTableComponent
+    SimpleMatTableComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +25,9 @@ import { SimpleMatTableComponent } from './simple-mat-table/simple-mat-table.com
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatMenuModule,
   ],
   providers: [
     provideAnimationsAsync()
