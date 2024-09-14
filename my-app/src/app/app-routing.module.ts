@@ -4,7 +4,7 @@ import { SimpleMatTableComponent } from './simple-mat-table/simple-mat-table.com
 
 const routes: Routes = [
   { path: 'simple-mat-table', component: SimpleMatTableComponent },
-  { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' }
+  { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' } 
 ];
 
 @NgModule({
