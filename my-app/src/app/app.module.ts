@@ -16,6 +16,9 @@ import { SimpleMatTableWithApiComponent } from './simple-mat-table-with-api/simp
 import { HttpClientModule } from '@angular/common/http';
 import { ScrollTableComponent } from './scroll-table/scroll-table.component';
 import { RightPanelDisableComponent } from './right-panel-disable/right-panel-disable.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { RightPanelDisableComponent } from './right-panel-disable/right-panel-di
     MatToolbarModule,
     MatButtonModule,
     MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCheckboxModule,
+    FormsModule,
+    MatRadioModule
   ],
   providers: [
     provideAnimationsAsync()
