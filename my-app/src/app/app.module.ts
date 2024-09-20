@@ -14,13 +14,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { SimpleMatTableWithApiComponent } from './simple-mat-table-with-api/simple-mat-table-with-api.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ScrollTableComponent } from './scroll-table/scroll-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SimpleMatTableComponent,
     NavbarComponent,
-    SimpleMatTableWithApiComponent
+    SimpleMatTableWithApiComponent,
+    ScrollTableComponent
   ],
   imports: [
     BrowserModule,
