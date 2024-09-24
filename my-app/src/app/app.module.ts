@@ -19,6 +19,9 @@ import { RightPanelDisableComponent } from './right-panel-disable/right-panel-di
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { MatRadioModule } from '@angular/material/radio';
+import { SwitchSliderComponent } from './switch-slider/switch-slider.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { MatRadioModule } from '@angular/material/radio';
     NavbarComponent,
     SimpleMatTableWithApiComponent,
     ScrollTableComponent,
-    RightPanelDisableComponent
+    RightPanelDisableComponent,
+    SwitchSliderComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,9 @@ import { MatRadioModule } from '@angular/material/radio';
     HttpClientModule,
     MatCheckboxModule,
     FormsModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSlideToggleModule,
+    MatIconModule
   ],
   providers: [
     provideAnimationsAsync()
