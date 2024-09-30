@@ -22,6 +22,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { SwitchSliderComponent } from './switch-slider/switch-slider.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
+import { MergeTavbleCellsComponent } from './merge-tavble-cells/merge-tavble-cells.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MatIconModule } from '@angular/material/icon';
     SimpleMatTableWithApiComponent,
     ScrollTableComponent,
     RightPanelDisableComponent,
-    SwitchSliderComponent
+    SwitchSliderComponent,
+    MergeTavbleCellsComponent
   ],
   imports: [
     BrowserModule,
