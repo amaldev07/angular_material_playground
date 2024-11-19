@@ -7,6 +7,7 @@ import { RightPanelDisableComponent } from './right-panel-disable/right-panel-di
 import { SwitchSliderComponent } from './switch-slider/switch-slider.component';
 import { MergeTavbleCellsComponent } from './merge-tavble-cells/merge-tavble-cells.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'right-panel-disable', component: RightPanelDisableComponent },
   { path: 'switch-slider', component: SwitchSliderComponent },
   { path: 'merger-table-cells', component: MergeTavbleCellsComponent },
-  { path: 'expansion-panel', component: ExpansionPanelComponent }
+  { path: 'expansion-panel', component: ExpansionPanelComponent },
+  { path: 'auto-complete', component: SearchComponent }
 ];
 
 @NgModule({

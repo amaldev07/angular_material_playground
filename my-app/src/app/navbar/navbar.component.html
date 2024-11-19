@@ -7,19 +7,14 @@
   <!-- Simple Menu Item -->
   <!-- <button mat-button routerLink="/your-path" routerLinkActive="active">Your Component</button> -->
 
-  <!-- Parent Menu with Submenu -->
-  
   <button mat-button [matMenuTriggerFor]="mainMenu">Table</button>
-
   <mat-menu #mainMenu="matMenu">
     <!-- First level menu item -->
     <button mat-menu-item routerLink="/simple-mat-table" routerLinkActive="active">Simple Table</button>
     <button mat-menu-item routerLink="/simple-table-withapi" routerLinkActive="active">Simple Table Api</button>
     <button mat-menu-item routerLink="/scroll-table" routerLinkActive="active">Scroll Table</button>
-
     <!-- Submenu with children -->
     <button mat-menu-item [matMenuTriggerFor]="subMenu">Submenu 2</button>
-
     <!-- Define the submenu -->
     <mat-menu #subMenu="matMenu">
       <button mat-menu-item routerLink="/submenu-path2-1" routerLinkActive="active">Submenu 2-1</button>
@@ -35,5 +30,7 @@
     <button mat-menu-item routerLink="/switch-slider" routerLinkActive="active">Mat Slider</button>
     <button mat-menu-item routerLink="/merger-table-cells" routerLinkActive="active">Merger Table Cells</button>
     <button mat-menu-item routerLink="/expansion-panel" routerLinkActive="active">Expansion Panel</button>
+    <button mat-menu-item routerLink="/auto-complete" routerLinkActive="active">Autocomplete</button>
   </mat-menu>
+
 </mat-toolbar>

@@ -17,13 +17,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { ScrollTableComponent } from './scroll-table/scroll-table.component';
 import { RightPanelDisableComponent } from './right-panel-disable/right-panel-disable.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { FormsModule } from '@angular/forms';
 import { MatRadioModule } from '@angular/material/radio';
 import { SwitchSliderComponent } from './switch-slider/switch-slider.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MergeTavbleCellsComponent } from './merge-tavble-cells/merge-tavble-cells.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { SearchComponent } from './search/search.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AsyncPipe } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+
 
 @NgModule({
   declarations: [
@@ -35,7 +42,8 @@ import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.compo
     RightPanelDisableComponent,
     SwitchSliderComponent,
     MergeTavbleCellsComponent,
-    ExpansionPanelComponent
+    ExpansionPanelComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -49,9 +57,14 @@ import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.compo
     HttpClientModule,
     MatCheckboxModule,
     FormsModule,
+    ReactiveFormsModule,
     MatRadioModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    MatAutocompleteModule,
+    AsyncPipe,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [
     provideAnimationsAsync()
