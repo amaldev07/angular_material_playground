@@ -23,6 +23,7 @@ import { SwitchSliderComponent } from './switch-slider/switch-slider.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MergeTavbleCellsComponent } from './merge-tavble-cells/merge-tavble-cells.component';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MergeTavbleCellsComponent } from './merge-tavble-cells/merge-tavble-cel
     ScrollTableComponent,
     RightPanelDisableComponent,
     SwitchSliderComponent,
-    MergeTavbleCellsComponent
+    MergeTavbleCellsComponent,
+    ExpansionPanelComponent
   ],
   imports: [
     BrowserModule,
