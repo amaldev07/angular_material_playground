@@ -15,7 +15,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
 
-export interface PeriodicElement {
+/* export interface PeriodicElement {
   id: number;
   name: string;
   name1: string;
@@ -30,14 +30,14 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { id: 1, name: 'Hydrogen', position: 1, weight: 1.0079, symbol: 'H', name1: 'Hydrogen', name2: 'Hydrogen', name3: 'Hydrogen' },
   { id: 2, name: 'Helium', position: 2, weight: 4.0026, symbol: 'He', name1: 'Hydrogen', name2: 'Hydrogen', name3: 'Hydrogen' },
 ];
-
+ */
 @Component({
   selector: 'app-sidenav-collapsible',
   templateUrl: './sidenav-collapsible.component.html',
   styleUrl: './sidenav-collapsible.component.scss'
 })
 export class SidenavCollapsibleComponent {
-  displayedColumns: string[] = ['id', 'name', 'position', 'weight', 'symbol', 'name1', 'name2', 'name3'];
+  /* displayedColumns: string[] = ['id', 'name', 'position', 'weight', 'symbol', 'name1', 'name2', 'name3'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -71,7 +71,7 @@ export class SidenavCollapsibleComponent {
     }
   }
 
-
+ */
 
   isPanelOpen = false; // Initial state of the right panel
 
