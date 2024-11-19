@@ -8,6 +8,7 @@ import { SwitchSliderComponent } from './switch-slider/switch-slider.component';
 import { MergeTavbleCellsComponent } from './merge-tavble-cells/merge-tavble-cells.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { SearchComponent } from './search/search.component';
+import { SidenavCollapsibleComponent } from './sidenav-collapsible/sidenav-collapsible.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'switch-slider', component: SwitchSliderComponent },
   { path: 'merger-table-cells', component: MergeTavbleCellsComponent },
   { path: 'expansion-panel', component: ExpansionPanelComponent },
-  { path: 'auto-complete', component: SearchComponent }
+  { path: 'auto-complete', component: SearchComponent },
+  { path: 'sidenav-collapsible', component: SidenavCollapsibleComponent },
 ];
 
 @NgModule({

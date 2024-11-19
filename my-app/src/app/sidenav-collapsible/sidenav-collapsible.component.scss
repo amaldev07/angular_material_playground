@@ -1,0 +1,44 @@
+table {
+    width: 100%;
+  }
+  
+  mat-header-cell, mat-cell {
+    padding: 8px;
+  }
+  
+  mat-paginator {
+    margin-top: 16px;
+  }
+
+// -----------------------------
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Ensure the body takes the full height */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Set the container height to full viewport height */
+}
+
+.left-section {
+    flex: 8; /* 80% width */
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-section {
+    flex: 2; /* 20% width */
+    // background-color: #d0d0d0; /* Darker gray background */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.disabled {
+  pointer-events: none; /* Prevent any interaction */
+  opacity: 0.5; /* Make it look disabled */
+}
+
+  

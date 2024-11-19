@@ -29,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AsyncPipe } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
+import { SidenavCollapsibleComponent } from './sidenav-collapsible/sidenav-collapsible.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     SwitchSliderComponent,
     MergeTavbleCellsComponent,
     ExpansionPanelComponent,
-    SearchComponent
+    SearchComponent,
+    SidenavCollapsibleComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatAutocompleteModule,
     AsyncPipe,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSidenavModule
   ],
   providers: [
     provideAnimationsAsync()
