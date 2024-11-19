@@ -3,9 +3,7 @@ import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { FormControl } from '@angular/forms';
 
-export interface User {
-  name: string;
-}
+
 
 @Component({
   selector: 'app-search',
@@ -13,27 +11,27 @@ export interface User {
   styleUrl: './search.component.scss'
 })
 export class SearchComponent {
-  myControl = new FormControl<string | User>('');
-  options: User[] = [{ name: 'Mary' }, { name: 'Shelley' }, { name: 'Igor' }];
-  filteredOptions: Observable<User[]> = new Observable();
+  myControl = new FormControl<string>('');
+  options = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry'];
+  filteredOptions: Observable<string[]> = new Observable();
 
   ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(''),
       map(value => {
-        const name = typeof value === 'string' ? value : value?.name;
+        const name = value;
         return name ? this._filter(name as string) : this.options.slice();
       }),
     );
   }
 
-  displayFn(user: User): string {
-    return user && user.name ? user.name : '';
+  displayFn(user: string): string {
+    return user || '';
   }
 
-  private _filter(name: string): User[] {
+  private _filter(name: string): string[] {
     const filterValue = name.toLowerCase();
 
-    return this.options.filter(option => option.name.toLowerCase().includes(filterValue));
+    return this.options.filter(option => option.toLowerCase().includes(filterValue));
   }
 }
