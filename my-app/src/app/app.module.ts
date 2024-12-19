@@ -31,6 +31,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SidenavCollapsibleComponent } from './sidenav-collapsible/sidenav-collapsible.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { TeatAreaSpaceIssueComponent } from './teat-area-space-issue/teat-area-space-issue.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MergeTavbleCellsComponent,
     ExpansionPanelComponent,
     SearchComponent,
-    SidenavCollapsibleComponent
+    SidenavCollapsibleComponent,
+    TeatAreaSpaceIssueComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { MergeTavbleCellsComponent } from './merge-tavble-cells/merge-tavble-cel
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { SearchComponent } from './search/search.component';
 import { SidenavCollapsibleComponent } from './sidenav-collapsible/sidenav-collapsible.component';
+import { TeatAreaSpaceIssueComponent } from './teat-area-space-issue/teat-area-space-issue.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'expansion-panel', component: ExpansionPanelComponent },
   { path: 'auto-complete', component: SearchComponent },
   { path: 'sidenav-collapsible', component: SidenavCollapsibleComponent },
+  { path: 'teat-area-spaceissue', component: TeatAreaSpaceIssueComponent },
 ];
 
 @NgModule({
