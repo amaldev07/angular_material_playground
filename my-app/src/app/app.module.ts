@@ -32,6 +32,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { SidenavCollapsibleComponent } from './sidenav-collapsible/sidenav-collapsible.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { TeatAreaSpaceIssueComponent } from './teat-area-space-issue/teat-area-space-issue.component';
+import { MyTabGroupComponent } from './my-tab-group/my-tab-group.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { TeatAreaSpaceIssueComponent } from './teat-area-space-issue/teat-area-s
     ExpansionPanelComponent,
     SearchComponent,
     SidenavCollapsibleComponent,
-    TeatAreaSpaceIssueComponent
+    TeatAreaSpaceIssueComponent,
+    MyTabGroupComponent
   ],
   imports: [
     BrowserModule,
