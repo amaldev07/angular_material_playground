@@ -37,6 +37,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { TeatAreaSpaceIssueComponent } from './teat-area-space-issue/teat-area-space-issue.component';
 import { MyTabGroupComponent } from './my-tab-group/my-tab-group.component';
+import { FormGrpComponent } from './form-grp/form-grp.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -54,7 +56,8 @@ import { MyTabGroupComponent } from './my-tab-group/my-tab-group.component';
     SidenavCollapsibleComponent,
     MyGridListComponent,
     TeatAreaSpaceIssueComponent,
-    MyTabGroupComponent
+    MyTabGroupComponent,
+    FormGrpComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +82,8 @@ import { MyTabGroupComponent } from './my-tab-group/my-tab-group.component';
     MatSidenavModule,
     MatGridListModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatCardModule
   ],
   providers: [
     provideAnimationsAsync()

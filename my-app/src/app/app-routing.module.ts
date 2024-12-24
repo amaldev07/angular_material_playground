@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { SidenavCollapsibleComponent } from './sidenav-collapsible/sidenav-collapsible.component';
 import { MyGridListComponent } from './my-grid-list/my-grid-list.component';
 import { TeatAreaSpaceIssueComponent } from './teat-area-space-issue/teat-area-space-issue.component';
+import { FormGrpComponent } from './form-grp/form-grp.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'sidenav-collapsible', component: SidenavCollapsibleComponent },
   { path: 'my-grid-list', component: MyGridListComponent },
   { path: 'teat-area-spaceissue', component: TeatAreaSpaceIssueComponent },
+  { path: 'form-grp-alignment', component: FormGrpComponent },
 ];
 
 @NgModule({
