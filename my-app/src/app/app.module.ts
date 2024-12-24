@@ -31,6 +31,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SidenavCollapsibleComponent } from './sidenav-collapsible/sidenav-collapsible.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MyGridListComponent } from './my-grid-list/my-grid-list.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -45,7 +49,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MergeTavbleCellsComponent,
     ExpansionPanelComponent,
     SearchComponent,
-    SidenavCollapsibleComponent
+    SidenavCollapsibleComponent,
+    MyGridListComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +72,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     AsyncPipe,
     MatInputModule,
     MatFormFieldModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatGridListModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [
     provideAnimationsAsync()

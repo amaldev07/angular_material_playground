@@ -9,6 +9,7 @@ import { MergeTavbleCellsComponent } from './merge-tavble-cells/merge-tavble-cel
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { SearchComponent } from './search/search.component';
 import { SidenavCollapsibleComponent } from './sidenav-collapsible/sidenav-collapsible.component';
+import { MyGridListComponent } from './my-grid-list/my-grid-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'expansion-panel', component: ExpansionPanelComponent },
   { path: 'auto-complete', component: SearchComponent },
   { path: 'sidenav-collapsible', component: SidenavCollapsibleComponent },
+  { path: 'my-grid-list', component: MyGridListComponent },
 ];
 
 @NgModule({

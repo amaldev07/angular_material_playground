@@ -1,0 +1,33 @@
+.tile-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    background-color: #e0e0e0;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+
+
+    flex-direction: column;
+  }
+
+  .date-picker-row {
+    display: flex;               /* Enable Flexbox */
+    justify-content: space-between; /* Space out child elements */
+    align-items: flex-start;         /* Align items vertically in the center */
+    gap: 20px;                   /* Optional: Add spacing between elements */
+  }
+  
+  mat-form-field {
+    width: 45%;                  /* Adjust width to fit two fields in one row */
+  }
+  
+  
+  mat-grid-tile {
+    background: lightblue;
+  }
+  
+  
