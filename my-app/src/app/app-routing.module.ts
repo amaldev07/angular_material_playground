@@ -9,7 +9,11 @@ import { MergeTavbleCellsComponent } from './merge-tavble-cells/merge-tavble-cel
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { SearchComponent } from './search/search.component';
 import { SidenavCollapsibleComponent } from './sidenav-collapsible/sidenav-collapsible.component';
+<<<<<<< HEAD
 import { MyGridListComponent } from './my-grid-list/my-grid-list.component';
+=======
+import { TeatAreaSpaceIssueComponent } from './teat-area-space-issue/teat-area-space-issue.component';
+>>>>>>> 29c0d54cf42d92bbc91c30e4e5e5e75a65811965
 
 const routes: Routes = [
   { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' },
@@ -22,7 +26,11 @@ const routes: Routes = [
   { path: 'expansion-panel', component: ExpansionPanelComponent },
   { path: 'auto-complete', component: SearchComponent },
   { path: 'sidenav-collapsible', component: SidenavCollapsibleComponent },
+<<<<<<< HEAD
   { path: 'my-grid-list', component: MyGridListComponent },
+=======
+  { path: 'teat-area-spaceissue', component: TeatAreaSpaceIssueComponent },
+>>>>>>> 29c0d54cf42d92bbc91c30e4e5e5e75a65811965
 ];
 
 @NgModule({

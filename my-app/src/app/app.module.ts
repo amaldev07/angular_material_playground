@@ -32,9 +32,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { SidenavCollapsibleComponent } from './sidenav-collapsible/sidenav-collapsible.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MyGridListComponent } from './my-grid-list/my-grid-list.component';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { TeatAreaSpaceIssueComponent } from './teat-area-space-issue/teat-area-space-issue.component';
+import { MyTabGroupComponent } from './my-tab-group/my-tab-group.component';
 
 
 @NgModule({
@@ -50,7 +52,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     ExpansionPanelComponent,
     SearchComponent,
     SidenavCollapsibleComponent,
-    MyGridListComponent
+    MyGridListComponent,
+    TeatAreaSpaceIssueComponent,
+    MyTabGroupComponent
   ],
   imports: [
     BrowserModule,
