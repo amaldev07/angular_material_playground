@@ -39,6 +39,7 @@ import { TeatAreaSpaceIssueComponent } from './teat-area-space-issue/teat-area-s
 import { MyTabGroupComponent } from './my-tab-group/my-tab-group.component';
 import { FormGrpComponent } from './form-grp/form-grp.component';
 import { MatCardModule } from '@angular/material/card';
+import { MyGridComponent } from './my-grid/my-grid.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { MatCardModule } from '@angular/material/card';
     MyGridListComponent,
     TeatAreaSpaceIssueComponent,
     MyTabGroupComponent,
-    FormGrpComponent
+    FormGrpComponent,
+    MyGridComponent
   ],
   imports: [
     BrowserModule,
