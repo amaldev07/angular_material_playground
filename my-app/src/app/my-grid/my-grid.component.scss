@@ -1,8 +1,30 @@
-mat-grid-tile {
-    background: lightblue;
-    border: 1px solid #ccc; /* Optional border for better visual separation */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Base header styling */
+.custom-header {
+    background-color: green !important;
+    color: white !important; /* Default text color */
+  }
+  
+  /* Target the title and description specifically */
+  .custom-header .mat-expansion-panel-header-title,
+  .custom-header .mat-expansion-panel-header-description {
+    color: white !important;
+  }
+  
+  /* Keep the green color and white text on hover */
+  .custom-header:hover {
+    background-color: green !important;
+    color: white !important;
+  }
+  
+  /* Keep the green color and white text when expanded */
+  .custom-header.mat-expanded {
+    background-color: green !important;
+    color: white !important;
+  }
+  
+  /* Ensure the text inside remains white when expanded */
+  .custom-header.mat-expanded .mat-expansion-panel-header-title,
+  .custom-header.mat-expanded .mat-expansion-panel-header-description {
+    color: white !important;
   }
   

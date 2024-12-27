@@ -40,6 +40,8 @@ import { MyTabGroupComponent } from './my-tab-group/my-tab-group.component';
 import { FormGrpComponent } from './form-grp/form-grp.component';
 import { MatCardModule } from '@angular/material/card';
 import { MyGridComponent } from './my-grid/my-grid.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 
 
 @NgModule({
@@ -85,7 +87,8 @@ import { MyGridComponent } from './my-grid/my-grid.component';
     MatGridListModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatCardModule
+    MatCardModule,
+    MatExpansionModule
   ],
   providers: [
     provideAnimationsAsync()
