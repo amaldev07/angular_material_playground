@@ -13,6 +13,7 @@ import { MyGridListComponent } from './my-grid-list/my-grid-list.component';
 import { TeatAreaSpaceIssueComponent } from './teat-area-space-issue/teat-area-space-issue.component';
 import { FormGrpComponent } from './form-grp/form-grp.component';
 import { MyGridComponent } from './my-grid/my-grid.component';
+import { TwoSectionComponent } from './two-section/two-section.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'teat-area-spaceissue', component: TeatAreaSpaceIssueComponent },
   { path: 'form-grp-alignment', component: FormGrpComponent },
   { path: 'my-grid', component: MyGridComponent },
+  { path: 'two-section', component: TwoSectionComponent },
 ];
 
 @NgModule({

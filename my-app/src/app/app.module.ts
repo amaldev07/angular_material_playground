@@ -40,6 +40,7 @@ import { MyTabGroupComponent } from './my-tab-group/my-tab-group.component';
 import { FormGrpComponent } from './form-grp/form-grp.component';
 import { MatCardModule } from '@angular/material/card';
 import { MyGridComponent } from './my-grid/my-grid.component';
+import { TwoSectionComponent } from './two-section/two-section.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { MyGridComponent } from './my-grid/my-grid.component';
     TeatAreaSpaceIssueComponent,
     MyTabGroupComponent,
     FormGrpComponent,
-    MyGridComponent
+    MyGridComponent,
+    TwoSectionComponent
   ],
   imports: [
     BrowserModule,
