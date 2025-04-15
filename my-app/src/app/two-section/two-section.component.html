@@ -34,4 +34,48 @@
       </mat-form-field>
     </div>
   </div>
-  
+<!-- --------------------------------   -->
+ <!-- Top Container: Left and Right Sections -->
+<div style="display: flex; width: 100%; gap: 20px; margin-top: 20px;">
+  <!-- Wrapper for Left Sections (top + bottom) -->
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+    
+    <!-- Top Left Section -->
+    <div style="border: 1px solid #ccc; padding: 16px;height:200px" >
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th style="padding: 8px; text-align: right;">Name</th>
+            <th style="padding: 8px; text-align: left;">Email</th>
+            <th style="padding: 8px; text-align: left;">Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 8px; text-align: right;">Alice</td>
+            <td style="padding: 8px;"><input type="text"></td>
+            <td style="padding: 8px;">1234567890</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; text-align: right;">Bob</td>
+            <td style="padding: 8px;">bobexample.com</td>
+            <td style="padding: 8px;">9876543210</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Bottom Left Section -->
+    <div style="border: 1px solid #ccc; padding: 16px;">
+      This is the additional left section below, perfectly aligned with the top-left.
+    </div>
+  </div>
+
+  <!-- Right Section -->
+  <div style="flex: 1; border: 1px solid #ccc;   height:200px">
+    <mat-form-field appearance="fill" style="width: 100%;">
+      <mat-label>Last Name</mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+</div>
