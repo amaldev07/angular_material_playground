@@ -41,6 +41,7 @@ import { FormGrpComponent } from './form-grp/form-grp.component';
 import { MatCardModule } from '@angular/material/card';
 import { MyGridComponent } from './my-grid/my-grid.component';
 import { TwoSectionComponent } from './two-section/two-section.component';
+import { TailwindStylesComponent } from './tailwind-styles/tailwind-styles.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { TwoSectionComponent } from './two-section/two-section.component';
     MyTabGroupComponent,
     FormGrpComponent,
     MyGridComponent,
-    TwoSectionComponent
+    TwoSectionComponent,
+    TailwindStylesComponent
   ],
   imports: [
     BrowserModule,
