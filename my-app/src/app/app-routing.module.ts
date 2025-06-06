@@ -15,6 +15,7 @@ import { FormGrpComponent } from './form-grp/form-grp.component';
 import { MyGridComponent } from './my-grid/my-grid.component';
 import { TwoSectionComponent } from './two-section/two-section.component';
 import { TailwindStylesComponent } from './tailwind-styles/tailwind-styles.component';
+import { MyMultiSelectComponent } from './my-multi-select/my-multi-select.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'my-grid', component: MyGridComponent },
   { path: 'two-section', component: TwoSectionComponent },
   { path: 'tailwind-css', component: TailwindStylesComponent },
+  { path: 'multi-select', component: MyMultiSelectComponent },
 ];
 
 @NgModule({
