@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrl: './my-multi-select.component.scss'
 })
 export class MyMultiSelectComponent {
+  regions = [
+    'North America',
+    'South America',
+    'Europe',
+    'Asia',
+    'Africa',
+    'Australia',
+    'Antarctica'
+  ];
+  selectedRegions: string[] = [];
+  onSelectionChange(e:any) {
+    this.selectedRegions = e.value;
+    console.log('Selected Regions:', this.selectedRegions);
 
+  }
 }

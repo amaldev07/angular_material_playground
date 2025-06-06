@@ -43,6 +43,7 @@ import { MyGridComponent } from './my-grid/my-grid.component';
 import { TwoSectionComponent } from './two-section/two-section.component';
 import { TailwindStylesComponent } from './tailwind-styles/tailwind-styles.component';
 import { MyMultiSelectComponent } from './my-multi-select/my-multi-select.component';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -91,7 +92,8 @@ import { MyMultiSelectComponent } from './my-multi-select/my-multi-select.compon
     MatGridListModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule
   ],
   providers: [
     provideAnimationsAsync()

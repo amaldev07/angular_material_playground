@@ -1,1 +1,9 @@
-<p>my-multi-select works!</p>
+<mat-form-field>
+    <mat-label>Regions</mat-label>
+    <mat-select [(value)]="selectedRegions" multiple 
+    (selectionChange)="onSelectionChange($event)">
+        @for (region of regions; track region) {
+        <mat-option [value]="region">{{region}}</mat-option>
+        }
+    </mat-select>
+</mat-form-field>
