@@ -1,1 +1,14 @@
-<p>autocomplete-multi-select works!</p>
+<div style="margin-left: 20px;">
+    <mat-form-field>
+        <mat-label>Regions</mat-label>
+        <mat-select [(value)]="selectedRegions" multiple (selectionChange)="onSelectionChange($event)">
+            <!-- <mat-option [value]="'All'" (click)="clickAll($event)">All</mat-option> -->
+            <mat-checkbox [checked]="checked" (change)="onCheckboxChange($event)">
+                Select All
+            </mat-checkbox>
+            @for (region of regions; track region) {
+            <mat-option [value]="region">{{region}}</mat-option>
+            }
+        </mat-select>
+    </mat-form-field>
+</div>
