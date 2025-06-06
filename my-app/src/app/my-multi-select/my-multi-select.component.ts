@@ -16,9 +16,24 @@ export class MyMultiSelectComponent {
     'Antarctica'
   ];
   selectedRegions: string[] = [];
-  onSelectionChange(e:any) {
-    this.selectedRegions = e.value;
-    console.log('Selected Regions:', this.selectedRegions);
 
+
+  onSelectionChange(e: any) {
+
+    if (this.selectedRegions.length === this.regions.length) {
+      this.checked = true;
+    } else {
+      this.checked = false;
+    }
+  }
+
+
+  checked: boolean = false;
+  onCheckboxChange(event: any) {
+    if (event.checked) {
+      this.selectedRegions = [...this.regions];
+    } else {
+      this.selectedRegions = [];
+    }
   }
 }
