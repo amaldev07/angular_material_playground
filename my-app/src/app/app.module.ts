@@ -44,6 +44,7 @@ import { TwoSectionComponent } from './two-section/two-section.component';
 import { TailwindStylesComponent } from './tailwind-styles/tailwind-styles.component';
 import { MyMultiSelectComponent } from './my-multi-select/my-multi-select.component';
 import { MatSelectModule } from '@angular/material/select';
+import { AutocompleteMultiSelectComponent } from './autocomplete-multi-select/autocomplete-multi-select.component';
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import { MatSelectModule } from '@angular/material/select';
     MyGridComponent,
     TwoSectionComponent,
     TailwindStylesComponent,
-    MyMultiSelectComponent
+    MyMultiSelectComponent,
+    AutocompleteMultiSelectComponent
   ],
   imports: [
     BrowserModule,

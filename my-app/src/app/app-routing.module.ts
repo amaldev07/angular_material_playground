@@ -16,6 +16,7 @@ import { MyGridComponent } from './my-grid/my-grid.component';
 import { TwoSectionComponent } from './two-section/two-section.component';
 import { TailwindStylesComponent } from './tailwind-styles/tailwind-styles.component';
 import { MyMultiSelectComponent } from './my-multi-select/my-multi-select.component';
+import { AutocompleteMultiSelectComponent } from './autocomplete-multi-select/autocomplete-multi-select.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/simple-mat-table', pathMatch: 'full' },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'two-section', component: TwoSectionComponent },
   { path: 'tailwind-css', component: TailwindStylesComponent },
   { path: 'multi-select', component: MyMultiSelectComponent },
+  { path: 'autocomplete-multi-select', component: AutocompleteMultiSelectComponent },
 ];
 
 @NgModule({
